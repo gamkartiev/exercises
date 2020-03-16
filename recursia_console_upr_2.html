@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кол-во эл-ов в массиве</title>
+</head>
+<body>
+
+<script>
+	var arr = [3,4,5,7,4,5,6,7]; //Обрабатываемый массив
+
+
+	function count(arr)
+	{
+		if(arr.length == 1)
+		{
+			return 1;
+		}else
+		{	
+			arr.shift();
+			return 1 + count(arr);
+		}
+	}
+
+	console.log (count(arr));
+
+</script>
+
+</body>
+</html>

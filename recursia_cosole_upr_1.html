@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Вычислить сумму чисел в массиве рекурсией</title>
+</head>
+<body>
+
+
+<script>
+
+var arr = [2,4,6]; //Обрабатываемый массив
+
+
+function sumRecurs(arr)
+{
+	if(arr.length == 0)
+	{
+		return 0;
+	}
+	else
+		return +arr.splice(0,1) + sumRecurs(arr);
+}
+
+console.log(sumRecurs(arr)); 
+	
+</script>
+
+</body>
+</html>
